@@ -152,6 +152,7 @@ opacity: 1;
 
 /* page hero */
 .page-hero {
+   background: #2e2f42;
    padding-top: 188px;
    margin: auto;
    max-width: 1440px;
@@ -162,7 +163,8 @@ background-size: cover;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
    url(../images/icon/people-office\ 1-2.jpg);
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+   
 }
 
 .text-hero {
