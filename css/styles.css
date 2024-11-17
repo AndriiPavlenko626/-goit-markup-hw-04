@@ -188,6 +188,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
    margin-left: auto;
    background-color: #4D5AE5;
    cursor: pointer;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-color:hover {
 background-color: #404BBF;
@@ -302,7 +303,7 @@ cursor: pointer;
    background-color: #F4F4FD;
 }
 
-.team-list-ul {
+.team-list {
    display: flex;
    gap: 24px;
 }
@@ -425,6 +426,7 @@ padding: 120px 0;
 
 .portfolio-item {
    width: calc((100% - 48px) / 3);
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-name {
@@ -456,53 +458,50 @@ padding: 120px 0;
 }
 /* footer */
 
-.logo-footer {
+.footer {
+   background: #2e2f42;
+   padding: 100px 0;
+ }
+ 
+ .footer .container {
    display: flex;
-   flex-direction: row;
    align-items: baseline;
-   margin-right: 120px;
-}
-
-.footer-logo {
+ }
+ 
+ .footer-name {
    font-family: "Raleway", sans-serif;
-   margin-bottom: 16px;
-   color: #4d5ae5;
-}
-
-.footer-logo .logo-part {
-   color: #f4f4fd;
-
-}
-
-.logo-part {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
    text-transform: uppercase;
    text-decoration: none;
    display: inline-block;
-}
-
-
-.page-footer {
-   background-color: #2e2f42;
-   padding: 100px;
-   display: flex;
-   align-items: baseline;
-   display: flex;
-}
-
-.text-footer {
+   margin-bottom: 16px;
+   color: #4d5ae5;
+ }
+ 
+ .footer-accent {
    color: #f4f4fd;
+ }
+ 
+ .footer-logo {
+   margin-right: 120px;
+ }
+ 
+ .footer-text {
+   font-weight: 400;
+   font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   max-width: 264px;
-   font-weight: 400;
-   position: relative;
-   left: -328px;
-
-}
-.footer-socials {
+   color: #f4f4fd;
+   width: 264px;
+ }
+ 
+ .footer-socials {
    display: flex;
    align-items: center;
-}
+ }
  
  .footer-social-title {
    margin-bottom: 16px;
@@ -510,10 +509,8 @@ padding: 120px 0;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   color: #FFFFFF;
+   color: #fff;
    align-self: baseline;
-   position: relative;
-   left: -546px;
  }
  
  .footer-icons {
@@ -526,8 +523,6 @@ padding: 120px 0;
  .footer-list {
    width: 40px;
    height: 40px;
-   position: relative;
-   left: -546px;
  }
  
  .footer-link {
