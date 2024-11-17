@@ -162,9 +162,8 @@ background-position: center center;
 background-size: cover;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-   url(../images/icon/people-office\ 1-2.jpg);
-   
-   
+   url('../images/icon/people-office\ 1-2.jpg');
+
 }
 
 .text-hero {
